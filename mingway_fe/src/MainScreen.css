@@ -1,0 +1,34 @@
+.main-screen-container {
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* 작은 화면에서는 세로로, 큰 화면에서는 가로로 나열됩니다. */
+  }
+  
+  .custom-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px; /* 작은 화면에서 버튼 사이의 간격을 조절합니다. */
+  }
+  
+  /* 미디어 쿼리를 사용하여 화면 크기에 따라 스타일을 조정합니다. */
+  @media only screen and (min-width: 768px) {
+    .button-container {
+      flex-direction: row;
+      justify-content: center; /* 가로로 나열된 버튼들을 중앙 정렬합니다. */
+    }
+  
+    .custom-button {
+      margin-right: 10px; /* 가로로 나열된 버튼 사이의 간격을 조절합니다. */
+      margin-bottom: 0; /* 가로로 나열된 버튼 사이의 간격을 조절합니다. */
+    }
+  }
+  

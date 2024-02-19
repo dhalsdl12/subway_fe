@@ -1,0 +1,12 @@
+.to-home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .to-home-container {
+      max-width: 600px; /* 큰 화면에서는 컨테이너의 최대 너비를 설정합니다. */
+      margin: 0 auto; /* 화면 중앙에 정렬됩니다. */
+    }
+  }
+  
