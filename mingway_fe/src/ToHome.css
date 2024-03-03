@@ -1,12 +1,70 @@
-.to-home-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .to-home-container {
-      max-width: 600px; /* 큰 화면에서는 컨테이너의 최대 너비를 설정합니다. */
-      margin: 0 auto; /* 화면 중앙에 정렬됩니다. */
-    }
-  }
-  
+.to-work-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수직 가운데 정렬을 위해 추가 */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center; /* 가로 방향 가운데 정렬을 위해 추가 */
+}
+
+.station-info {
+  /* border: 1px solid #ccc; */ /* 태두리 선 제거 */
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.station-info h2 {
+  margin-bottom: 10px;
+}
+
+.arrival-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrival {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.arrival p {
+  margin: 5px 0;
+}
+
+/*
+.data-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.station-info h2 {
+  margin-bottom: 10px;
+  color: #333; /* 제목 글자색 */
+}
+
+.arrival {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.arrival p {
+  margin: 5px 0;
+  color: #555; /* 도착 정보 글자색 */
+}
+
+/* 박스와 뒤로가기 버튼 사이에 공간 추가 */
+.station-info + .custom-button {
+  margin-top: 20px;
+}
